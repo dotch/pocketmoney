@@ -13,6 +13,7 @@
 		B57BDB4F1B2C65AE00939199 /* FriendsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57BDB4E1B2C65AE00939199 /* FriendsListController.swift */; };
 		B57BDB511B2C7E9800939199 /* PersonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57BDB501B2C7E9800939199 /* PersonsViewController.swift */; };
 		B57BDB531B2C839500939199 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57BDB521B2C839500939199 /* ScanViewController.swift */; };
+		D110DA3D1B2C8FA70031295E /* PersonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D110DA3C1B2C8FA70031295E /* PersonsListViewController.swift */; };
 		D1D3692A1B2C396C008B79F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D369291B2C396C008B79F7 /* AppDelegate.swift */; };
 		D1D3692C1B2C396C008B79F7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D3692B1B2C396C008B79F7 /* FirstViewController.swift */; };
 		D1D3692E1B2C396C008B79F7 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D3692D1B2C396C008B79F7 /* TransactionsViewController.swift */; };
@@ -42,6 +43,7 @@
 		B57BDB4E1B2C65AE00939199 /* FriendsListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsListController.swift; sourceTree = "<group>"; };
 		B57BDB501B2C7E9800939199 /* PersonsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonsViewController.swift; sourceTree = "<group>"; };
 		B57BDB521B2C839500939199 /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		D110DA3C1B2C8FA70031295E /* PersonsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonsListViewController.swift; sourceTree = "<group>"; };
 		D1D369241B2C396C008B79F7 /* pocketmoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pocketmoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1D369281B2C396C008B79F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1D369291B2C396C008B79F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				B57BDB4C1B2C608900939199 /* InitialTabbarController.swift */,
 				B57BDB4E1B2C65AE00939199 /* FriendsListController.swift */,
 				B57BDB501B2C7E9800939199 /* PersonsViewController.swift */,
+				D110DA3C1B2C8FA70031295E /* PersonsListViewController.swift */,
 				B57BDB521B2C839500939199 /* ScanViewController.swift */,
 			);
 			path = pocketmoney;
@@ -311,6 +314,7 @@
 				B57BDB4B1B2C590600939199 /* LoginViewController.swift in Sources */,
 				D1D3692E1B2C396C008B79F7 /* TransactionsViewController.swift in Sources */,
 				D1D3692A1B2C396C008B79F7 /* AppDelegate.swift in Sources */,
+				D110DA3D1B2C8FA70031295E /* PersonsListViewController.swift in Sources */,
 				B57BDB4F1B2C65AE00939199 /* FriendsListController.swift in Sources */,
 				D1D3692C1B2C396C008B79F7 /* FirstViewController.swift in Sources */,
 				B57BDB4D1B2C608900939199 /* InitialTabbarController.swift in Sources */,
