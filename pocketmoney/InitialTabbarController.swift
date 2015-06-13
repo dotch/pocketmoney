@@ -13,7 +13,6 @@ class InitialTabbarController: UITabBarController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        println("UITAB called!")
         //PFUser.logOut()
         let currentUser = PFUser.currentUser()
         if(currentUser == nil){

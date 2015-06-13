@@ -10,9 +10,12 @@
 		0FC803CE5113F30C329755CE /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031F2D13959FD31B88621E77 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B57BDB4B1B2C590600939199 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57BDB4A1B2C590600939199 /* LoginViewController.swift */; };
 		B57BDB4D1B2C608900939199 /* InitialTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57BDB4C1B2C608900939199 /* InitialTabbarController.swift */; };
+		B57BDB4F1B2C65AE00939199 /* FriendsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57BDB4E1B2C65AE00939199 /* FriendsListController.swift */; };
+		B57BDB511B2C7E9800939199 /* PersonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57BDB501B2C7E9800939199 /* PersonsViewController.swift */; };
+		B57BDB531B2C839500939199 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57BDB521B2C839500939199 /* ScanViewController.swift */; };
 		D1D3692A1B2C396C008B79F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D369291B2C396C008B79F7 /* AppDelegate.swift */; };
 		D1D3692C1B2C396C008B79F7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D3692B1B2C396C008B79F7 /* FirstViewController.swift */; };
-		D1D3692E1B2C396C008B79F7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D3692D1B2C396C008B79F7 /* SecondViewController.swift */; };
+		D1D3692E1B2C396C008B79F7 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D3692D1B2C396C008B79F7 /* TransactionsViewController.swift */; };
 		D1D369311B2C396C008B79F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1D3692F1B2C396C008B79F7 /* Main.storyboard */; };
 		D1D369331B2C396C008B79F7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1D369321B2C396C008B79F7 /* Images.xcassets */; };
 		D1D369361B2C396C008B79F7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D369341B2C396C008B79F7 /* LaunchScreen.xib */; };
@@ -36,11 +39,14 @@
 		B57BDB471B2C4D0600939199 /* pocketmoney-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pocketmoney-Bridging-Header.h"; sourceTree = "<group>"; };
 		B57BDB4A1B2C590600939199 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B57BDB4C1B2C608900939199 /* InitialTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialTabbarController.swift; sourceTree = "<group>"; };
+		B57BDB4E1B2C65AE00939199 /* FriendsListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsListController.swift; sourceTree = "<group>"; };
+		B57BDB501B2C7E9800939199 /* PersonsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonsViewController.swift; sourceTree = "<group>"; };
+		B57BDB521B2C839500939199 /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		D1D369241B2C396C008B79F7 /* pocketmoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pocketmoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1D369281B2C396C008B79F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1D369291B2C396C008B79F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1D3692B1B2C396C008B79F7 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		D1D3692D1B2C396C008B79F7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		D1D3692D1B2C396C008B79F7 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
 		D1D369301B2C396C008B79F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D1D369321B2C396C008B79F7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D1D369351B2C396C008B79F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -110,7 +116,7 @@
 			children = (
 				D1D369291B2C396C008B79F7 /* AppDelegate.swift */,
 				D1D3692B1B2C396C008B79F7 /* FirstViewController.swift */,
-				D1D3692D1B2C396C008B79F7 /* SecondViewController.swift */,
+				D1D3692D1B2C396C008B79F7 /* TransactionsViewController.swift */,
 				D1D3692F1B2C396C008B79F7 /* Main.storyboard */,
 				D1D369321B2C396C008B79F7 /* Images.xcassets */,
 				D1D369341B2C396C008B79F7 /* LaunchScreen.xib */,
@@ -118,6 +124,9 @@
 				B57BDB471B2C4D0600939199 /* pocketmoney-Bridging-Header.h */,
 				B57BDB4A1B2C590600939199 /* LoginViewController.swift */,
 				B57BDB4C1B2C608900939199 /* InitialTabbarController.swift */,
+				B57BDB4E1B2C65AE00939199 /* FriendsListController.swift */,
+				B57BDB501B2C7E9800939199 /* PersonsViewController.swift */,
+				B57BDB521B2C839500939199 /* ScanViewController.swift */,
 			);
 			path = pocketmoney;
 			sourceTree = "<group>";
@@ -298,11 +307,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B57BDB511B2C7E9800939199 /* PersonsViewController.swift in Sources */,
 				B57BDB4B1B2C590600939199 /* LoginViewController.swift in Sources */,
-				D1D3692E1B2C396C008B79F7 /* SecondViewController.swift in Sources */,
+				D1D3692E1B2C396C008B79F7 /* TransactionsViewController.swift in Sources */,
 				D1D3692A1B2C396C008B79F7 /* AppDelegate.swift in Sources */,
+				B57BDB4F1B2C65AE00939199 /* FriendsListController.swift in Sources */,
 				D1D3692C1B2C396C008B79F7 /* FirstViewController.swift in Sources */,
 				B57BDB4D1B2C608900939199 /* InitialTabbarController.swift in Sources */,
+				B57BDB531B2C839500939199 /* ScanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
