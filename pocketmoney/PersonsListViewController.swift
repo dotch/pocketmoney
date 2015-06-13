@@ -34,19 +34,19 @@ class PersonsListViewController: PFQueryTableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell? {
-        var cell = tableView.dequeueReusableCellWithIdentifier("UserCell") as! PFTableViewCell
-        cell = PFTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "UserCell")
+        var cell = tableView.dequeueReusableCellWithIdentifier("UserCell") as! UserCellView
+        //cell = UserCellView(style: UITableViewCellStyle.Default, reuseIdentifier: "UserCell")
         
         // image
         let rawUrl = object?.objectForKey("imageUrl")
         if((rawUrl) != nil) {
             let url = NSURL(string: rawUrl as! String)
             let data = NSData(contentsOfURL: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check
-            cell.imageView!.image = UIImage(data: data!)
-        }
+            cell.userImage!.image = UIImage(data: data!)
+        }  
         
         // text
-        cell.textLabel!.text = object?.objectForKey("username") as! String
+        cell.userName!.text = object?.objectForKey("username") as! String
         return cell
     }
 }
