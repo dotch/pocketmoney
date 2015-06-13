@@ -12,5 +12,6 @@ class ScanViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        println("scan view called!")
     }
 }

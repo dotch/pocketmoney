@@ -18,7 +18,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         Parse.setApplicationId("25evSppNdXvOlx5q7WI1FlkNDbBgV9ZFwFl87O78", clientKey:"BLamCnUIEvX4wf8xlx7qs6gqf1KNytuX9VTpjgpz")
-        return true
+        
+        if application.respondsToSelector("registerUserNotificationSettings:") {
+            
+            let types:UIUserNotificationType = (.Alert | .Badge | .Sound)
+            let settings:UIUserNotificationSettings = UIUserNotificationSettings(forTypes: types, categories: nil)
+            
+            application.registerUserNotificationSettings(settings)
+            application.registerForRemoteNotifications()
+            
+        }
+        
+                return true
     }
 
     func applicationWillResignActive(application: UIApplication) {

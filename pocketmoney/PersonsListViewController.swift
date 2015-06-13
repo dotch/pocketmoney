@@ -29,8 +29,6 @@ class PersonsListViewController: PFQueryTableViewController {
         
         // Configure the PFQueryTableView
         self.parseClassName = "_User"
-        self.textKey = "username"
-        self.imageKey = "imageUrl"
         self.pullToRefreshEnabled = false
         self.paginationEnabled = false
     }
@@ -40,9 +38,12 @@ class PersonsListViewController: PFQueryTableViewController {
         cell = PFTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "UserCell")
         
         // image
-        let url = NSURL(string: object?.objectForKey("imageUrl") as! String)
-        let data = NSData(contentsOfURL: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check
-        cell.imageView!.image = UIImage(data: data!)
+        let rawUrl = object?.objectForKey("imageUrl")
+        if((rawUrl) != nil) {
+            let url = NSURL(string: rawUrl as! String)
+            let data = NSData(contentsOfURL: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check
+            cell.imageView!.image = UIImage(data: data!)
+        }
         
         // text
         cell.textLabel!.text = object?.objectForKey("username") as! String
