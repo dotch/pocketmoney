@@ -1,1 +1,24 @@
+PODS:
+  - Alamofire (1.2.3)
+  - Bolts (1.1.5):
+    - Bolts/AppLinks (= 1.1.5)
+    - Bolts/Tasks (= 1.1.5)
+  - Bolts/AppLinks (1.1.5):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.1.5)
+  - Parse-iOS (1.3.0.1):
+    - Bolts (~> 1.1.2)
+  - SwiftyJSON (2.2.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 1.2.3)
+  - Parse-iOS (~> 1.3.0.1)
+  - SwiftyJSON (~> 2.2.0)
+
+SPEC CHECKSUMS:
+  Alamofire: 5550bf0b575ed1a4bf9be572f9463e1015cc169e
+  Bolts: aac24961496d504aa56fc267cde95162a71bac39
+  Parse-iOS: 4031d90d3a3e650b6d24165edcfdfb1598bc3260
+  SwiftyJSON: 0b3e6c07af17ff745e77e8e9984097b55c956e5c
+
 COCOAPODS: 0.37.2
