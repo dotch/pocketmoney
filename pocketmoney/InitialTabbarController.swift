@@ -18,6 +18,11 @@ class InitialTabbarController: UITabBarController {
         if(currentUser == nil){
             performSegueWithIdentifier("showLogin", sender: self)
         }
+        
+        var backgroundImage = UIImageView(image: UIImage(named: "background.png"))
+        
+        self.view.addSubview(backgroundImage)
+        self.view.sendSubviewToBack(backgroundImage)
 
     }
 }
