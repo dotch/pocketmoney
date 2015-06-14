@@ -18,20 +18,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5f-0B-wzp">
-                                <rect key="frame" x="16" y="66" width="46" height="30"/>
+                                <rect key="frame" x="16" y="269" width="46" height="30"/>
                                 <state key="normal" title="Ask">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="askButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="vPW-Ff-mXU"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xsw-L3-HJM">
-                                <rect key="frame" x="16" y="28" width="288" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yty-7H-P4a">
                                 <rect key="frame" x="538" y="125" width="46" height="30"/>
                                 <state key="normal" title="Button">
@@ -39,15 +34,22 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cU-wV-T8r">
-                                <rect key="frame" x="258" y="66" width="46" height="30"/>
+                                <rect key="frame" x="258" y="269" width="46" height="30"/>
                                 <state key="normal" title="Send">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="sendButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="tqV-mw-yZO"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="10.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xsw-L3-HJM">
+                                <rect key="frame" x="16" y="177" width="288" height="84"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="decimalPad"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -58,7 +60,7 @@
                             <constraint firstItem="Xsw-L3-HJM" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="wLh-L2-xkd"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Pay/Ask" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Pay/Ask" image="ios7-paperplane-outline" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="amount" destination="Xsw-L3-HJM" id="53m-yi-wR7"/>
                         <segue destination="7bQ-2Q-vX6" kind="modal" identifier="showFriendsList" id="VJ0-9W-0re"/>
@@ -86,7 +88,7 @@
             </objects>
             <point key="canvasLocation" x="-490" y="574"/>
         </scene>
-        <!--people-->
+        <!--People-->
         <scene sceneID="q1X-dF-ukw">
             <objects>
                 <viewController id="yAN-8t-NX4" customClass="PersonsViewController" customModule="pocketmoney" customModuleProvider="target" sceneMemberID="viewController">
@@ -152,7 +154,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="DnG-bP-etU" secondAttribute="trailing" id="pN9-3e-Qjn"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="people" id="sLe-te-qkD"/>
+                    <tabBarItem key="tabBarItem" title="People" image="android-contact" id="sLe-te-qkD"/>
                     <connections>
                         <outlet property="profilePic" destination="AIk-cK-VCQ" id="JfX-et-0xb"/>
                         <outlet property="username" destination="4GV-UI-6ad" id="zvf-6Z-TtO"/>
@@ -248,7 +250,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Scan" id="5So-jy-bMm"/>
+                    <tabBarItem key="tabBarItem" title="Scan" image="qr-scanner" id="5So-jy-bMm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k4l-ul-d05" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -367,7 +369,7 @@
                             <outlet property="delegate" destination="Mxj-Pw-ieS" id="i4W-Zn-fLv"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Transactions" id="qzx-Rk-wl9"/>
+                    <tabBarItem key="tabBarItem" title="Transactions" image="ios-list-outline" id="qzx-Rk-wl9"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ro9-C9-MKO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -376,8 +378,11 @@
     </scenes>
     <resources>
         <image name="account_and_control.png" width="128" height="128"/>
-        <image name="first" width="30" height="30"/>
+        <image name="android-contact" width="32" height="32"/>
         <image name="gear-a.png" width="512" height="512"/>
+        <image name="ios-list-outline" width="32" height="32"/>
+        <image name="ios7-paperplane-outline" width="32" height="32"/>
+        <image name="qr-scanner" width="32" height="32"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
