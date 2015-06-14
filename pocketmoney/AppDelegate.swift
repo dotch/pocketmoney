@@ -14,7 +14,9 @@ import ParseUI
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    var giniSdk: GiniSDK?
+    
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
@@ -45,6 +47,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let types = UIRemoteNotificationType.Badge | UIRemoteNotificationType.Alert | UIRemoteNotificationType.Sound
             application.registerForRemoteNotificationTypes(types)
         }
+        
+        let builder = GINISDKBuilder.anonymousUserWithClientID("burda-hackday-08", clientSecret: "cO5W-xQlLn5oYNTeDI0ycbvjFIcE1Q", userEmailDomain: "pocketmon.ey")
+        
+        giniSdk = builder.build()
         
         
         return true

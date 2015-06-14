@@ -2,8 +2,7 @@
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'AFNetworking', '~> 2.5.4'
-pod 'SwiftyJSON', '~> 2.2.0'
+pod 'Gini-iOS-SDK', :git => 'https://github.com/dotch/gini-sdk-ios.git'
 pod 'Parse'
 pod 'ParseUI', '~> 1.1.4'
 

@@ -18,6 +18,12 @@
 		B57BDB5D1B2CDEEF00939199 /* UserCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57BDB5C1B2CDEEF00939199 /* UserCellView.swift */; };
 		B57BDB5F1B2CE38E00939199 /* account_and_control.png in Resources */ = {isa = PBXBuildFile; fileRef = B57BDB5E1B2CE38E00939199 /* account_and_control.png */; };
 		D110DA3D1B2C8FA70031295E /* PersonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D110DA3C1B2C8FA70031295E /* PersonsListViewController.swift */; };
+		D110DA431B2D6EED0031295E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D110DA421B2D6EED0031295E /* CoreMedia.framework */; };
+		D110DA451B2D6F000031295E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D110DA441B2D6F000031295E /* AVFoundation.framework */; };
+		D110DA471B2D6F210031295E /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D110DA461B2D6F210031295E /* AssetsLibrary.framework */; };
+		D110DA531B2D723E0031295E /* GiniVision.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D110DA501B2D723E0031295E /* GiniVision.bundle */; };
+		D110DA541B2D723E0031295E /* GiniVision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D110DA511B2D723E0031295E /* GiniVision.framework */; };
+		D110DA551B2D723E0031295E /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D110DA521B2D723E0031295E /* opencv2.framework */; };
 		D1D3692A1B2C396C008B79F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D369291B2C396C008B79F7 /* AppDelegate.swift */; };
 		D1D3692C1B2C396C008B79F7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D3692B1B2C396C008B79F7 /* FirstViewController.swift */; };
 		D1D3692E1B2C396C008B79F7 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D3692D1B2C396C008B79F7 /* TransactionsViewController.swift */; };
@@ -52,6 +58,12 @@
 		B57BDB5C1B2CDEEF00939199 /* UserCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCellView.swift; sourceTree = "<group>"; };
 		B57BDB5E1B2CE38E00939199 /* account_and_control.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = account_and_control.png; sourceTree = "<group>"; };
 		D110DA3C1B2C8FA70031295E /* PersonsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonsListViewController.swift; sourceTree = "<group>"; };
+		D110DA421B2D6EED0031295E /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		D110DA441B2D6F000031295E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D110DA461B2D6F210031295E /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		D110DA501B2D723E0031295E /* GiniVision.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GiniVision.bundle; sourceTree = "<group>"; };
+		D110DA511B2D723E0031295E /* GiniVision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GiniVision.framework; sourceTree = "<group>"; };
+		D110DA521B2D723E0031295E /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		D1D369241B2C396C008B79F7 /* pocketmoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pocketmoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1D369281B2C396C008B79F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1D369291B2C396C008B79F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,7 +82,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D110DA551B2D723E0031295E /* opencv2.framework in Frameworks */,
+				D110DA471B2D6F210031295E /* AssetsLibrary.framework in Frameworks */,
+				D110DA451B2D6F000031295E /* AVFoundation.framework in Frameworks */,
+				D110DA431B2D6EED0031295E /* CoreMedia.framework in Frameworks */,
 				0FC803CE5113F30C329755CE /* Pods.framework in Frameworks */,
+				D110DA541B2D723E0031295E /* GiniVision.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,14 +113,28 @@
 		8DD1E39198A50D4EA1D1E9F3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D110DA461B2D6F210031295E /* AssetsLibrary.framework */,
+				D110DA441B2D6F000031295E /* AVFoundation.framework */,
+				D110DA421B2D6EED0031295E /* CoreMedia.framework */,
 				031F2D13959FD31B88621E77 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D110DA4F1B2D723E0031295E /* GiniVisionFramework */ = {
+			isa = PBXGroup;
+			children = (
+				D110DA501B2D723E0031295E /* GiniVision.bundle */,
+				D110DA511B2D723E0031295E /* GiniVision.framework */,
+				D110DA521B2D723E0031295E /* opencv2.framework */,
+			);
+			path = GiniVisionFramework;
+			sourceTree = "<group>";
+		};
 		D1D3691B1B2C396C008B79F7 = {
 			isa = PBXGroup;
 			children = (
+				D110DA4F1B2D723E0031295E /* GiniVisionFramework */,
 				D1D369261B2C396C008B79F7 /* pocketmoney */,
 				D1D3693E1B2C396C008B79F7 /* pocketmoneyTests */,
 				D1D369251B2C396C008B79F7 /* Products */,
@@ -254,6 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D110DA531B2D723E0031295E /* GiniVision.bundle in Resources */,
 				D1D369311B2C396C008B79F7 /* Main.storyboard in Resources */,
 				D1D369361B2C396C008B79F7 /* LaunchScreen.xib in Resources */,
 				B57BDB5B1B2CD36D00939199 /* gear-a.png in Resources */,
@@ -465,8 +497,32 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GiniVisionFramework",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"/**",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = pocketmoney/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"Bolts\"",
+					"-framework",
+					"\"Parse\"",
+					"-framework",
+					"\"ParseUI\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-l\"stdc++\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "pocketmoney/pocketmoney-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -479,8 +535,32 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GiniVisionFramework",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"/**",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = pocketmoney/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"Bolts\"",
+					"-framework",
+					"\"Parse\"",
+					"-framework",
+					"\"ParseUI\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-l\"stdc++\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "pocketmoney/pocketmoney-Bridging-Header.h";
 			};
