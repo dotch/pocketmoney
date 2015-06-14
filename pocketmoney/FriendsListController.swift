@@ -81,6 +81,8 @@ class FriendsListController: PFQueryTableViewController {
         transaction["amount"] = amount
         transaction.save()
         dismissViewControllerAnimated(true, completion: nil)
+        var tabbarCtrl = self.presentingViewController as! InitialTabbarController
+        tabbarCtrl.selectedIndex = 1
     }
     
 }

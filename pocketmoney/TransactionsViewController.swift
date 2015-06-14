@@ -28,7 +28,7 @@ class TransactionsViewController: PFQueryTableViewController {
         
         // Configure the PFQueryTableView
         self.parseClassName = "Transaction"
-        self.pullToRefreshEnabled = false
+        self.pullToRefreshEnabled = true
         self.paginationEnabled = false
     }
     
@@ -44,6 +44,8 @@ class TransactionsViewController: PFQueryTableViewController {
         println("queryfortable!")
         query.includeKey("receivingUserId")
         query.includeKey("sendingUserId")
+        
+        query.orderByDescending("createdAt")
         //query.whereKey("receivingUserId", equalTo: PFUser.currentUser()!)
         return query
     }
@@ -63,20 +65,32 @@ class TransactionsViewController: PFQueryTableViewController {
         //println("receive: \(receivingUser.username!)")
         
         // text
-        //cell.username.text = "None"
-        var u = receivingUser.objectId == PFUser.currentUser()?.objectId ? sendingUser.username! : receivingUser.username!
-        println("UUU: \(u)");
-        var textToShow = "\(amount) to \(u) "
+        println(object)
+        var dateUpdated = object!.createdAt as! NSDate!
+        var dateFormat = NSDateFormatter()
+        dateFormat.dateStyle = .MediumStyle
+        dateFormat.timeStyle = .MediumStyle
+        cell.date.text = NSString(format: "%@", dateFormat.stringFromDate(dateUpdated)) as String
         
-        cell.username.text = textToShow
-        cell.amount.text = "PAID"
-        let rawUrl = receivingUser.objectForKey("imageUrl")
-        if rawUrl != nil {
-            let url = NSURL(string: rawUrl as! String)
-            let data = NSData(contentsOfURL: url!)
-            cell.userImage.image = UIImage(data: data!)
-
+        if receivingUser.objectId == PFUser.currentUser()?.objectId {
+            cell.username.text = "\(amount)€ from \(sendingUser.username!)"
+            let rawUrl = sendingUser.objectForKey("imageUrl")
+            if rawUrl != nil {
+                let url = NSURL(string: rawUrl as! String)
+                let data = NSData(contentsOfURL: url!)
+                cell.userImage.image = UIImage(data: data!)
+            }
+        } else {
+            cell.username.text = "\(amount)€ to \(receivingUser.username!)"
+            let rawUrl = receivingUser.objectForKey("imageUrl")
+            if rawUrl != nil {
+                let url = NSURL(string: rawUrl as! String)
+                let data = NSData(contentsOfURL: url!)
+                cell.userImage.image = UIImage(data: data!)
+                
+            }
         }
+        
         return cell
     }
 

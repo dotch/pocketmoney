@@ -14,8 +14,8 @@ class TransactionCellView: PFTableViewCell {
     @IBAction func playRecord(sender: UIButton) {
     }
     
-    @IBOutlet var amount: UILabel!
-    
+    @IBOutlet weak var date: UILabel!
+        
     @IBOutlet var username: UILabel!
     
     @IBOutlet var userImage: UIImageView!
