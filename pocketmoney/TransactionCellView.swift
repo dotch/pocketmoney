@@ -11,9 +11,12 @@ import ParseUI
 
 class TransactionCellView: PFTableViewCell {
     
-    @IBAction func playRecord(sender: UIButton) {
+    @IBAction func setTransactionDone(sender: AnyObject) {
+        println("setting item \(sender.tag) done...")
+        //TODO make request to parse and set status to done
     }
     
+    @IBOutlet weak var transactionDoneButton: UIButton!
     @IBOutlet weak var date: UILabel!
         
     @IBOutlet var username: UILabel!

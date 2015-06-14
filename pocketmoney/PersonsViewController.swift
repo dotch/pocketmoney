@@ -13,8 +13,8 @@ import ParseUI
 
 class PersonsViewController: UIViewController {
 
-    @IBAction func buttonClicked(sender: AnyObject) {
-        
+    @IBAction func settingsButtonClicked(sender: AnyObject) {
+        PFUser.logOut()
     }
     
     @IBOutlet weak var username: UILabel!

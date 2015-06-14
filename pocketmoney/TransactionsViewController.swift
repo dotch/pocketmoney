@@ -61,8 +61,16 @@ class TransactionsViewController: PFQueryTableViewController {
         
         var amount = object?.objectForKey("amount") as! String
         
+        var status = object?.objectForKey("status") as! String
+        
         //println("send: \(sendingUser.username!)")
         //println("receive: \(receivingUser.username!)")
+        
+        if status == "done" {
+            cell.transactionDoneButton.hidden = true
+        }else {
+            //cell.transactionDoneButton.tag = object!.objectId as! Int
+        }
         
         // text
         println(object)
