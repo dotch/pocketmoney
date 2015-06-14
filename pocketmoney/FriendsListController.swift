@@ -48,7 +48,7 @@ class FriendsListController: PFQueryTableViewController {
             println("cancel was tapped")
             }))
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default,handler: {action in
-            self.sendMoney()
+            self.sendMoney(rowObj)
         }))
         
         self.presentViewController(alertController, animated: true, completion: nil)
@@ -63,9 +63,23 @@ class FriendsListController: PFQueryTableViewController {
         
     }
     
-    func sendMoney() {
+    func sendMoney(user: PFUser) {
         println("confirm was tapped")
         //TODO make api call!
+        var transaction = PFObject(className: "Transaction")
+        if mode == "ask" {
+            transaction["receivingUserId"] = PFUser.currentUser()
+            transaction["sendingUserId"] = user
+            transaction["status"] = "pending"
+            transaction["mode"] = "ask"
+        }else {
+            transaction["receivingUserId"] = user
+            transaction["sendingUserId"] = PFUser.currentUser()
+            transaction["status"] = "done"
+            transaction["mode"] = "get"
+        }
+        transaction["amount"] = amount
+        transaction.save()
         dismissViewControllerAnimated(true, completion: nil)
     }
     
